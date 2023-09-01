@@ -1,16 +1,33 @@
 # The Gonzo of Coding: My Journey Through 'Code the Classics'
-Hello there, fellow masochists who enjoy reading other people's code! If you're wondering what this is about, it's basically me trying to do a Hunter S. Thompson but for code, specifically the code from the book 'Code the Classics Vol 1'—and no, not the drugs part, the "writing off someone else to understand their genius" part.
+Hello, code enthusiasts and fellow self-flagellators! 🤓 Welcome to my modest (and arguably misguided) attempt at the Hunter S. Thompson approach to coding. No, I'm not indulging in a myriad of mind-altering substances; just what my doctor prescribed and coffee. ☕ Rather, I'm "transcribing" the code from the awe-inspiring book ['Code the Classics Vol 1'](https://store.rpipress.cc/products/code-the-classics).
 
-🚨 Disclaimer: I'm not the original author of this code. That credit goes to the brilliant minds behind 'Code the Classics Vol 1'. My contributions are like painting a mustache on the Mona Lisa: utterly pointless, but amusing to a very specific kind of person (me).
+## 🚨 Disclaimer
+I didn't pen the original code; that's the work of masterful artists behind ['Code the Classics Vol 1'](https://store.rpipress.cc/products/code-the-classics). My humble "contributions" are like adding a fake mustache to the Mona Lisa—a defacement, but amusing to a very specific sort of person (me).
 
-## What is This?
-This repository contains code I've copied—erhm, let's call it "transcribed"—from the book 'Code the Classics Vol 1'. The aim? To understand how real coding feels like, because right now, I'm basically fumbling in the dark, occasionally hitting the right keys.
+## What is This Repository? 🤔
+In the dimly lit room where my coding happens, I've "transcribed" code from the 'Code the Classics Vol 1'. The aim? To understand what it's like to type code that's actually good, because my usual method involves a lot of keyboard smashing and silent prayers to the coding gods.
 
-## Why am I Doing This?
-Inspired by Hunter S. Thompson, who transcribed entire books from Hemingway and Fitzgerald to understand the "rhythm of their language," I'm trying to get the feel of what it's like to write code that doesn't suck.
+## Why? Just Why? 🙃
+Taking a leaf out of Hunter S. Thompson's typewriter—minus the cigars and bourbon—I'm transcribing these classics to feel the "rhythm of the code," so to speak. I'm yearning to experience the joy of writing code that doesn't resemble spaghetti thrown against a wall.
 
-## License
-This project is as much mine as a sandcastle is to a kid who didn't bring his own bucket and spade. The original work is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0). So, if you're planning to use this code, make sure you follow the license's terms, unlike how I follow good coding practices.
+## Why am I Recommending This Book?
+Let me tell you, ['Code the Classics'](https://store.rpipress.cc/products/code-the-classics) isn't just a typical coding book—it's a gem for anyone with a soft spot for classic games and their history. The book is not only visually stunning but also packed with intriguing stories behind these timeless games. Whether you're a seasoned coder or a retro game enthusiast, this book is a treasure trove of knowledge and nostalgia. Highly recommended!
+
+## Credits
+Big shoutout to the brilliant minds behind 'Code the Classics Vol 1':
+
+Publishing Director: [Russell Barnes](eventuell länk om du hittar)
+Editor: Phil King
+Illustrations: [Dan Malone](https://danmalone.artstation.com/)
+Head of Design: Lee Allen
+CEO: [Eben Upton](https://twitter.com/EbenUpton)
+For the original code and more, check out their GitHub repository [here](https://github.com/Wireframe-Magazine/Code-the-Classics).
+
+## License 📜
+Consider this project the sandcastle built by the kid who didn't bring their own bucket and spade to the beach. The original masterpiece is under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0) license. If you’re planning to use this potpourri of programming, ensure you adhere to the license terms—something I should perhaps also do when coding.
 
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+[![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
