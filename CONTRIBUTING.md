@@ -16,4 +16,4 @@ Hey there! Glad to see you're interested in contributing to this project. While 
 
 ## License
 
-By contributing to this project, you agree that your contributions will be licensed under the same terms as the original project (CC BY-NC-SA 3.0)[https://creativecommons.org/licenses/by-nc-sa/3.0/].
+By contributing to this project, you agree that your contributions will be licensed under the same terms as the original project [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/).
