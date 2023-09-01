@@ -16,7 +16,7 @@ Let me tell you, ['Code the Classics'](https://store.rpipress.cc/products/code-t
 ## Credits
 Big shoutout to the brilliant minds behind 'Code the Classics Vol 1':
 
-Publishing Director: [Russell Barnes](eventuell länk om du hittar)
+Publishing Director: Russell Barnes
 Editor: Phil King
 Illustrations: [Dan Malone](https://danmalone.artstation.com/)
 Head of Design: Lee Allen
