@@ -5,7 +5,7 @@ Hello, code enthusiasts and fellow self-flagellators! 🤓 Welcome to my modest 
 I didn't pen the original code; that's the work of masterful artists behind ['Code the Classics Vol 1'](https://store.rpipress.cc/products/code-the-classics). My humble "contributions" are like adding a fake mustache to the Mona Lisa—a defacement, but amusing to a very specific sort of person (me).
 
 ## What is This Repository? 🤔
-In the dimly lit room where my coding happens, I've "transcribed" code from the 'Code the Classics Vol 1'. The aim? To understand what it's like to type code that's actually good, because my usual method involves a lot of keyboard smashing and silent prayers to the coding gods.
+In the dimly lit room where my coding happens, I've "transcribed" code from the 'Code the Classics Vol 1'. The aim? To understand what it's like to type code that's actually good because my usual method involves a lot of keyboard smashing and silent prayers to the coding gods.
 
 ## Why? Just Why? 🙃
 Taking a leaf out of Hunter S. Thompson's typewriter—minus the cigars and bourbon—I'm transcribing these classics to feel the "rhythm of the code," so to speak. I'm yearning to experience the joy of writing code that doesn't resemble spaghetti thrown against a wall.
@@ -17,10 +17,16 @@ Let me tell you, ['Code the Classics'](https://store.rpipress.cc/products/code-t
 Big shoutout to the brilliant minds behind 'Code the Classics Vol 1':
 
 Publishing Director: Russell Barnes
+
 Editor: Phil King
+
 Illustrations: [Dan Malone](https://danmalone.artstation.com/)
+
 Head of Design: Lee Allen
+
 CEO: [Eben Upton](https://twitter.com/EbenUpton)
+
+    
 For the original code and more, check out their GitHub repository [here](https://github.com/Wireframe-Magazine/Code-the-Classics).
 
 ## License 📜
