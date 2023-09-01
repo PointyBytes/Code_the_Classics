@@ -5,3 +5,8 @@ __pycache__
 
 # venv enviroment
 CodeTheClassics/
+
+# Sounds and Grafics
+images/
+music/
+sounds/
