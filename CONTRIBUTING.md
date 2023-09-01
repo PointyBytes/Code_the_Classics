@@ -13,5 +13,7 @@ Hey there! Glad to see you're interested in contributing to this project. While 
 ### Coding Style
 * Please follow PEP 8 for Python code.
 * Use meaningful variable names and keep your methods small.
-### License
-By contributing to this project, you agree that your contributions will be licensed under the same terms as the original project, which is CC BY-NC-SA 3.0.
+
+## License
+
+By contributing to this project, you agree that your contributions will be licensed under the same terms as the original project (CC BY-NC-SA 3.0). My own contributions to this work are under CC BY-NC-SA 4.0.
