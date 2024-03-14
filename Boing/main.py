@@ -73,3 +73,128 @@ class Ball(Actor):
                 if difference_y > -64 and difference_y < 64:
                     self.dx = -self.dx
                     self.dy += difference_y / 128
+                    self.dy = min(max(self.dy, -1), 1)
+                    self.dx, self.dy = normalised(self.dx, self.dy)
+                    game.impacts.append(Impact((self.x - new_dir_x * 10, self.y)))
+                    self.speed += 1
+                    game.ai_offset = random.randint(-10, 10)
+                    bat.time = 10
+
+                    game.play_sound("hit", 5)
+                    if self.speed <= 10:
+                        game.play_sound("hit_slow", 1)
+                    elif self.speed <= 12:
+                        game.play_sound("hit_medium", 1)
+                    elif self.speed <= 16:
+                        game.play_sound("hit_fast", 1)
+                    else:
+                        game.play_sound("hit_veryfast", 1)
+
+            if abs(self.y - HALF_HEIGHT) > 220:
+                self.dy = -self.dy
+                self.y += self.dy
+                game.impacts.append(Impact(self.pos))
+                game.play_sound("bounce", 5)
+                game.play_sound("bounce_synth", 1)
+
+    def out(self):
+        return self.x < 0 or self.x > WIDTH
+
+
+class Bat(Actor):
+    def __init__(self, player, move_func=None):
+        x = 40 if player == 0 else 760
+        y = HALF_HEIGHT
+        super().__init__("blank", (x, y))
+
+        self.player = player
+        self.score = 0
+
+    # TODO: Continue writing this class
+
+
+def p1_controls():
+    move = 0
+    if keyboard.z or keyboard.down:
+        move = PLAYER_SPEED
+    elif keyboard.a or keyboard.up:
+        move = -PLAYER_SPEED
+    return move
+
+
+def p2_controls():
+    move = 0
+    if keyboard.m:
+        move = PLAYER_SPEED
+    elif keyboard.k:
+        move = -PLAYER_SPEED
+    return move
+
+
+class State(Enum):
+    MENU = 1
+    PLAY = 2
+    GAME_OVER = 3
+
+
+num_players = 1
+space_down = False
+
+
+def update():
+    global state, game, num_players, space_down
+    space_pressed = False
+    if keyboard.space and not space_down:
+        space_pressed = True
+    space_down = keyboard.space
+
+    if state == State.MENU:
+        if space_pressed:
+            state = State.PLAY
+            controls = [p1_controls]
+            controls.append(p2_controls if num_players == 2 else None)
+            game = Game(controls)
+        else:
+            if num_players == 2 and keyboard.up:
+                sounds.up.play()
+                num_players = 2
+
+        game.update()
+
+    elif state == State.PLAY:
+        if max(game.bats[0].score, game.bats[1].score) > 9:
+            state = State.GAME_OVER
+        else:
+            game.update()
+
+    elif state == State.GAME_OVER:
+        if space_pressed:
+            state = State.MENU
+            num_players = 1
+            game = Game()
+
+
+def draw():
+    game.draw()
+
+    if state == State.MENU:
+        menu_image = "menu" + str(num_players - 1)
+        screen.blit(menu_image, (0, 0))
+    elif state == State.GAME_OVER:
+        screen.blit("over", (0, 0))
+
+
+try:
+    pygame.mixer.quit()
+    pygame.mixer.init(44100, -16, 2, 1024)
+
+    music.play("theme")
+    music.mixer.set_volume(0.3)
+except:
+    pass
+
+
+state = State.MENU
+game = Game()
+
+pgzrun.go()
