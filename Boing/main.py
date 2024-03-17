@@ -113,6 +113,26 @@ class Bat(Actor):
     # TODO: Continue writing this class
 
 
+class Game:
+    def __init__(self, controls=(None, None)):
+        self.bats = [
+            Bat(
+                0,
+                controls[0],
+                Bat(
+                    1,
+                ),
+            )
+        ]
+        self.ball = Ball(-1)
+        self.impacts = []
+        self.ai_offset = 0
+
+    def update(self):
+        for obj in self.bats + [self.ball] + self.impacts:
+            obj.update()
+
+
 def p1_controls():
     move = 0
     if keyboard.z or keyboard.down:
