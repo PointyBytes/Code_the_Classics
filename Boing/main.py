@@ -132,6 +132,18 @@ class Game:
         for obj in self.bats + [self.ball] + self.impacts:
             obj.update()
 
+        for i in range(len(self.impacts) - 1, -1, -1):
+            if self.impacts[i].time >= 10:
+                del self.impacts[i]
+
+        if self.ball.out():
+            scoring_player = 1 if self.ball.x < WIDTH // 2 else 0
+            losing_player = 1 - scoring_player
+
+            if self.bats[losing_player].timer < 0:
+                # TODO: Continue from here line 156 in the book
+                pass
+
 
 def p1_controls():
     move = 0
