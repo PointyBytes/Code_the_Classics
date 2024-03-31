@@ -141,8 +141,11 @@ class Game:
             losing_player = 1 - scoring_player
 
             if self.bats[losing_player].timer < 0:
-                # TODO: Continue from here line 156 in the book
-                pass
+                self.bats[scoring_player].score += 1
+                game.play_sound("score_goal", 1)
+                self.bats[losing_player].timer = 20
+
+            # TODO: Line 160 elif
 
 
 def p1_controls():
