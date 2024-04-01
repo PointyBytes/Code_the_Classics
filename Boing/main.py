@@ -145,7 +145,16 @@ class Game:
                 game.play_sound("score_goal", 1)
                 self.bats[losing_player].timer = 20
 
-            # TODO: Line 160 elif
+            elif self.bats[losing_player].timer == 0:
+
+                direction = -1 if losing_player == 0 else 1
+                self.ball = Ball(direction)
+
+    def draw(self):
+        screen.blit("table", (0, 0))
+
+        for p in (0,1):
+            # TODO: Line 169
 
 
 def p1_controls():
