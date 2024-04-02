@@ -153,8 +153,9 @@ class Game:
     def draw(self):
         screen.blit("table", (0, 0))
 
-        for p in (0,1):
-            # TODO: Line 169
+        for p in (0, 1):
+            if self.bats[p].timer > 0 and game.ball.out():
+                scree.blit("effect" + str(p), (0, 0))
 
 
 def p1_controls():
