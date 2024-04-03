@@ -157,6 +157,9 @@ class Game:
             if self.bats[p].timer > 0 and game.ball.out():
                 scree.blit("effect" + str(p), (0, 0))
 
+        for obj in self.bats + [self.ball] + self.impacts:
+            obj.draw()
+
 
 def p1_controls():
     move = 0
