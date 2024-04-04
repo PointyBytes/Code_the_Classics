@@ -160,6 +160,14 @@ class Game:
         for obj in self.bats + [self.ball] + self.impacts:
             obj.draw()
 
+        for p in (0,1):
+            score = "{0:02d}".format(self.bats[p].score)
+
+            for i in (0,1):
+                colour = "0"
+                other_p = 1-p
+                if self.bats[other_p].timer > 0 and
+
 
 def p1_controls():
     move = 0
