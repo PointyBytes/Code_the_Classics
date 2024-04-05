@@ -166,7 +166,15 @@ class Game:
             for i in (0,1):
                 colour = "0"
                 other_p = 1-p
-                if self.bats[other_p].timer > 0 and
+                if self.bats[other_p].timer > 0 and game.ball.out():
+                    colour ="2" if p == 0 else "1"
+                image = "digit" + colour + str(score[i])
+                screen.blit(image, (255 + (160 * p) + (i * 55), 46))
+    
+    def play_sound(self, name, count=1):
+        if self.bats[0].move_func != self.bats[0].ai:
+            try:
+                getattr()
 
 
 def p1_controls():
