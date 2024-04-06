@@ -110,6 +110,14 @@ class Bat(Actor):
         self.player = player
         self.score = 0
 
+        if move_func != None:
+            self.move_func = move_func
+        else:
+            self.move_func = self.ai
+
+        self.time = 0
+
+    def update(self):
     # TODO: Continue writing this class
 
 
@@ -160,21 +168,23 @@ class Game:
         for obj in self.bats + [self.ball] + self.impacts:
             obj.draw()
 
-        for p in (0,1):
+        for p in (0, 1):
             score = "{0:02d}".format(self.bats[p].score)
 
-            for i in (0,1):
+            for i in (0, 1):
                 colour = "0"
-                other_p = 1-p
+                other_p = 1 - p
                 if self.bats[other_p].timer > 0 and game.ball.out():
-                    colour ="2" if p == 0 else "1"
+                    colour = "2" if p == 0 else "1"
                 image = "digit" + colour + str(score[i])
                 screen.blit(image, (255 + (160 * p) + (i * 55), 46))
-    
+
     def play_sound(self, name, count=1):
         if self.bats[0].move_func != self.bats[0].ai:
             try:
-                getattr()
+                getattr(sound, name + str(random.randint(0, cont - 1))).play()
+            except:
+                pass
 
 
 def p1_controls():
