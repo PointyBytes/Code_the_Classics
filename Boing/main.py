@@ -118,6 +118,8 @@ class Bat(Actor):
         self.time = 0
 
     def update(self):
+        self.timer -= 1
+
     # TODO: Continue writing this class
 
 
