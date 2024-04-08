@@ -119,6 +119,15 @@ class Bat(Actor):
 
     def update(self):
         self.timer -= 1
+        y_movement = self.move_func()
+        self.y = min(400, max(80, self.y + y_movement))
+
+        frame = 0
+        if self.timer > 0:
+            if game.ball.out():
+                frame = 2
+            else:
+                frame = 1
 
     # TODO: Continue writing this class
 
