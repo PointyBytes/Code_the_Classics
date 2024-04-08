@@ -129,6 +129,11 @@ class Bat(Actor):
             else:
                 frame = 1
 
+        self.image = "bat" + str(self.player) + str(frame)
+
+    def ai(self):
+        x_distance = abs(game.ball.x - self.x)
+
     # TODO: Continue writing this class
 
 
