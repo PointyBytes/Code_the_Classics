@@ -133,6 +133,8 @@ class Bat(Actor):
 
     def ai(self):
         x_distance = abs(game.ball.x - self.x)
+        target_y_1 = HALF_HEIGHT
+        target_y_2 = game.ball.y + game.ai_offset
 
     # TODO: Continue writing this class
 
